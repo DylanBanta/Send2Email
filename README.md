@@ -22,6 +22,8 @@ C:\Users\\[USER]\AppData\Local\Send2Email for each user that will be using the a
 
 ##### SMTP_Pass
 * This is the password for the SMTP_User that you'll be logging into to send emails from.
+* This is also the password you'll use when you choose Edit > Config from the file menu to access a GUI editor for the cfg.json file. 
+* Note you will need the cfg.json file to at least exist in the AppData folder, as the software will not run without detecting cfg.json.
 * Default: N/A
 
 ##### Mail_From
@@ -58,9 +60,15 @@ The final file should look something like this.
   "Mail_From": "email@company.com",
   "Mail_Subject": "Mail Subject Text",
   "Mail_Body": "Mail Body Text",
-  "Mail_Delivery": "Mail Delivery Text",
+  "Mail_Delivery": "Mail Delivery Text + {destination_email}",
   "File_Extensions": "jpg, jpeg, png, gif, bmp, tif, pdf"
 }
-
-
 ```
+
+# Usage
+Onve you've set up the cfg.json file Send2Email is a simple program, to use it you'll simply run it, and enter in an email address. Click send and it will attempt to attach each file in the User's Pictures directory as an attachment to that email, provided they are of the proper filetypes.
+
+
+
+
+
