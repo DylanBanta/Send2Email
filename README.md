@@ -58,7 +58,7 @@ The final file should look something like this.
   "Mail_From": "email@company.com",
   "Mail_Subject": "Mail Subject Text",
   "Mail_Body": "Mail Body Text",
-  "Mail_Delivery": "Mail Delivery Text + {destination_email}",
+  "Mail_Delivery": "Mail Delivery Text",
   "File_Extensions": "jpg, jpeg, png, gif, bmp, tif, pdf"
 }
 
