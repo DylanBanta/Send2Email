@@ -12,8 +12,8 @@ namespace SendEmail
     {
         #region Global Variables
         //File Explorer Path
-        //C:\Users\[USER]\AppData\Local\Scan2Email
-        public static string appPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\Scan2Email\\";
+        //C:\Users\[USER]\AppData\Local\Send2Email
+        public static string appPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\Send2Email\\";
 
         //My Pictures Path
         //C:\Users\[USER]\My Pictures
@@ -53,7 +53,7 @@ namespace SendEmail
             else //If Config Doesn't Exist
             {
                 //Display an error message before closing the application
-                MessageBox.Show("A critical error has occurred. Configuration file is missing. Scan2Email will not function without this configuration file. Please contact IT to resolve this issue.");
+                MessageBox.Show("A critical error has occurred. Configuration file is missing. Send2Email will not function without this configuration file. Please contact IT to resolve this issue.");
                 Application.Exit(); //Exit the application
             }
         }

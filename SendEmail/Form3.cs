@@ -16,7 +16,7 @@ namespace SendEmail
     public partial class Form3 : Form
     {
         /*
-         * Form3 is the configuration window for Scan2Email
+         * Form3 is the configuration window for Send2Email
          */
 
         #region UI
@@ -124,7 +124,7 @@ namespace SendEmail
             //Serialize the JSON data so it can be written to a text file
             string[] json = { JsonConvert.SerializeObject(cfg, Formatting.Indented) };
 
-            //Write Config file to Program.appPath (default is Appdata/Local/Scan2Email)
+            //Write Config file to Program.appPath (default is Appdata/Local/Send2Email)
             WriteFile(json, Program.configName, Program.configFileExt);
         }
 
